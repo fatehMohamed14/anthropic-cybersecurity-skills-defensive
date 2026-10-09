@@ -1,0 +1,139 @@
+{
+  "servers": {
+    "virustotal": {
+      "command": "npx",
+      "args": ["-y", "@burtthecoder/mcp-virustotal"],
+      "env": {
+        "VT_API_KEY": "${env:VT_API_KEY}"
+      }
+    },
+    "shodan": {
+      "command": "npx",
+      "args": ["-y", "@burtthecoder/mcp-shodan"],
+      "env": {
+        "SHODAN_API_KEY": "${env:SHODAN_API_KEY}"
+      }
+    },
+    "dnstwist": {
+      "command": "npx",
+      "args": ["-y", "@burtthecoder/mcp-dnstwist"]
+    },
+    "abuseipdb": {
+      "command": "npx",
+      "args": ["-y", "abuseipdb-mcp"],
+      "env": {
+        "ABUSEIPDB_API_KEY": "${env:ABUSEIPDB_API_KEY}"
+      }
+    },
+    "greynoise": {
+      "command": "npx",
+      "args": ["-y", "@greynoise/greynoise-mcp-server"],
+      "env": {
+        "GREYNOISE_API_KEY": "${env:GREYNOISE_API_KEY}"
+      }
+    },
+    "censys": {
+      "command": "npx",
+      "args": ["-y", "censys-mcp"],
+      "env": {
+        "CENSYS_API_ID": "${env:CENSYS_API_ID}",
+        "CENSYS_API_SECRET": "${env:CENSYS_API_SECRET}"
+      }
+    },
+    "urlscan": {
+      "command": "npx",
+      "args": ["-y", "urlscan-mcp"],
+      "env": {
+        "URLSCAN_API_KEY": "${env:URLSCAN_API_KEY}"
+      }
+    },
+    "otx": {
+      "command": "npx",
+      "args": ["-y", "otx-mcp"],
+      "env": {
+        "OTX_API_KEY": "${env:OTX_API_KEY}"
+      }
+    },
+    "misp": {
+      "command": "npx",
+      "args": ["-y", "misp-mcp"],
+      "env": {
+        "MISP_URL": "${env:MISP_URL}",
+        "MISP_API_KEY": "${env:MISP_API_KEY}"
+      }
+    },
+    "wazuh": {
+      "command": "npx",
+      "args": ["-y", "wazuh-mcp"],
+      "env": {
+        "WAZUH_API_URL": "${env:WAZUH_API_URL}",
+        "WAZUH_API_USER": "${env:WAZUH_API_USER}",
+        "WAZUH_API_PASSWORD": "${env:WAZUH_API_PASSWORD}"
+      }
+    },
+    "sentinelone": {
+      "command": "npx",
+      "args": ["-y", "@pmoses-s1/s1-secops-mcp"],
+      "env": {
+        "SENTINELONE_API_URL": "${env:SENTINELONE_API_URL}",
+        "SENTINELONE_API_KEY": "${env:SENTINELONE_API_KEY}"
+      }
+    },
+    "splunk": {
+      "command": "npx",
+      "args": ["-y", "splunk-mcp-server"],
+      "env": {
+        "SPLUNK_HOST": "${env:SPLUNK_HOST}",
+        "SPLUNK_TOKEN": "${env:SPLUNK_TOKEN}"
+      }
+    },
+    "elasticsearch": {
+      "command": "npx",
+      "args": ["-y", "@elastic/mcp-server-elasticsearch"],
+      "env": {
+        "ELASTICSEARCH_URL": "${env:ELASTICSEARCH_URL}",
+        "ELASTICSEARCH_API_KEY": "${env:ELASTICSEARCH_API_KEY}"
+      }
+    },
+    "azure": {
+      "command": "npx",
+      "args": ["-y", "@azure/mcp"],
+      "env": {}
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${env:GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "jira": {
+      "command": "npx",
+      "args": ["-y", "@aashari/mcp-server-atlassian-jira"],
+      "env": {
+        "JIRA_URL": "${env:JIRA_URL}",
+        "JIRA_USERNAME": "${env:JIRA_USERNAME}",
+        "JIRA_API_TOKEN": "${env:JIRA_API_TOKEN}"
+      }
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@notionhq/notion-mcp-server"],
+      "env": {
+        "NOTION_API_KEY": "${env:NOTION_API_KEY}"
+      }
+    },
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "slack-mcp-server"],
+      "env": {
+        "SLACK_BOT_TOKEN": "${env:SLACK_BOT_TOKEN}",
+        "SLACK_TEAM_ID": "${env:SLACK_TEAM_ID}"
+      }
+    },
+    "nuclei": {
+      "command": "npx",
+      "args": ["-y", "gc-nuclei-mcp"]
+    }
+  }
+}

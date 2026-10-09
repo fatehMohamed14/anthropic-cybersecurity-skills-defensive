@@ -5,15 +5,15 @@
     "email": "mukuljangra5@gmail.com"
   },
   "metadata": {
-    "description": "712 cybersecurity skills for AI agents mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, and the MITRE Fight Fraud Framework (F3).",
-    "version": "1.3.0"
+    "description": "712 defensive-only cybersecurity skills + 19 bundled MCP servers (VirusTotal, Shodan, AbuseIPDB, GreyNoise, Censys, URLScan, OTX, MISP, Wazuh, SentinelOne, Splunk, Elastic, Azure, GitHub, Jira, Notion, Slack, Nuclei, DNSTwist) — 6 frameworks.",
+    "version": "1.4.0"
   },
   "plugins": [
     {
       "name": "cybersecurity-skills",
       "source": "./",
-      "description": "712 cybersecurity skills covering web security, pentesting, DFIR, threat intelligence, cloud security, malware analysis, and more. Mapped to 6 frameworks.",
-      "version": "1.3.0",
+      "description": "712 defensive-only cybersecurity skills + 19 bundled MCP servers (VirusTotal, Shodan, AbuseIPDB, GreyNoise, Censys, URLScan, OTX, MISP, Wazuh, SentinelOne, Splunk, Elastic, Azure, GitHub, Jira, Notion, Slack, Nuclei, DNSTwist). API tools via MCP, local binaries via brew/pip.",
+      "version": "1.4.0",
       "author": {
         "name": "mukul975"
       },
