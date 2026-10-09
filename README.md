@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/banner.png" alt="Anthropic Cybersecurity Skills — Defensive-Only Fork" width="100%">
-</p>
-
 <div align="center">
 
 # Anthropic Cybersecurity Skills — Defensive-Only Fork

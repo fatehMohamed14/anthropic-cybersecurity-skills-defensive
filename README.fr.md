@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/banner.png" alt="Anthropic Cybersecurity Skills — Fork défensif uniquement" width="100%">
-</p>
-
 <div align="center">
 
 # Compétences Cybersecurity Anthropic — Fork défensif uniquement
@@ -41,14 +37,14 @@ La bibliothèque d'origine est excellente, mais elle livre 818 compétences côt
 
 Ce fork retire exactement ce risque, avec une décision de retrait rendue transparente et vérifiable plutôt que simplement affirmée :
 
-| | Dépôt d'origine | Ce fork |
-|---|---|---|
-| Nombre total de compétences | 818 | 712 |
-| Compétences offensives/exploit/C2 | 106 incluses | **0** — entièrement retirées, [liste complète ici](REMOVED_SKILLS.txt) |
-| Critères de retrait documentés | — | ✅ [CURATION_NOTES.md](CURATION_NOTES.md) — règles exactes utilisées, vérifiables |
-| Manifeste d'outils par compétence | — | ✅ [tool_manifest.json](tool_manifest.json) — lisible par machine, ce dont chaque compétence a besoin pour fonctionner |
-| Guide d'installation des outils groupé | — | ✅ [TOOLS_SETUP_GUIDE.md](TOOLS_SETUP_GUIDE.md) — par catégorie (SIEM, EDR, forensic, threat-intel) |
-| Sûr pour les environnements contraints par la conformité | Filtrage manuel requis | ✅ d'origine |
+|                                                          | Dépôt d'origine        | Ce fork                                                                                                                |
+| -------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Nombre total de compétences                              | 818                    | 712                                                                                                                    |
+| Compétences offensives/exploit/C2                        | 106 incluses           | **0** — entièrement retirées, [liste complète ici](REMOVED_SKILLS.txt)                                                 |
+| Critères de retrait documentés                           | —                      | ✅ [CURATION_NOTES.md](CURATION_NOTES.md) — règles exactes utilisées, vérifiables                                      |
+| Manifeste d'outils par compétence                        | —                      | ✅ [tool_manifest.json](tool_manifest.json) — lisible par machine, ce dont chaque compétence a besoin pour fonctionner |
+| Guide d'installation des outils groupé                   | —                      | ✅ [TOOLS_SETUP_GUIDE.md](TOOLS_SETUP_GUIDE.md) — par catégorie (SIEM, EDR, forensic, threat-intel)                    |
+| Sûr pour les environnements contraints par la conformité | Filtrage manuel requis | ✅ d'origine                                                                                                           |
 
 Si vous avez besoin des compétences retirées pour un engagement red-team autorisé, le [dépôt d'origine](https://github.com/mukul975/anthropic-cybersecurity-skills) les propose, sous une licence clairement adaptée à cet usage.
 
@@ -64,21 +60,21 @@ Ce dépôt contient **712 compétences cybersécurité structurées, défensives
 
 Aucune autre bibliothèque open source de compétences ne mappe chaque compétence à l'ensemble de ces frameworks. Une compétence, six cases de conformité cochées. **Couverture des frameworks sur les 712 compétences de ce fork** (recalculée après le tri, à partir du frontmatter de chaque compétence conservée) : MITRE ATT&CK **700** · NIST CSF 2.0 **699** · MITRE D3FEND **112** · MITRE F3 **87** · NIST AI RMF **89** · MITRE ATLAS **86**.
 
-|Framework|Version|Couverture dans ce dépôt|Ce qui est mappé|
-|--|--|--|--|
-|MITRE ATT&CK|v19.1|15 tactiques · 286 techniques|Comportements adverses et TTP|
-|NIST CSF 2.0|2.0|6 fonctions · 22 catégories|Posture de sécurité organisationnelle|
-|MITRE ATLAS|v5.4|16 tactiques · 84 techniques|Menaces adverses sur IA/ML|
-|MITRE D3FEND|v1.3|7 catégories · 267 techniques|Contre-mesures défensives|
-|NIST AI RMF|1.0|4 fonctions · 72 sous-catégories|Gestion des risques IA|
-|MITRE F3 (Fight Fraud Framework)|v1.1 (2026-04-09)|8 tactiques · 123 techniques · 94 compétences liées à la fraude|TTP de fraude financière cybernétique|
+| Framework                        | Version           | Couverture dans ce dépôt                                        | Ce qui est mappé                      |
+| -------------------------------- | ----------------- | --------------------------------------------------------------- | ------------------------------------- |
+| MITRE ATT&CK                     | v19.1             | 15 tactiques · 286 techniques                                   | Comportements adverses et TTP         |
+| NIST CSF 2.0                     | 2.0               | 6 fonctions · 22 catégories                                     | Posture de sécurité organisationnelle |
+| MITRE ATLAS                      | v5.4              | 16 tactiques · 84 techniques                                    | Menaces adverses sur IA/ML            |
+| MITRE D3FEND                     | v1.3              | 7 catégories · 267 techniques                                   | Contre-mesures défensives             |
+| NIST AI RMF                      | 1.0               | 4 fonctions · 72 sous-catégories                                | Gestion des risques IA                |
+| MITRE F3 (Fight Fraud Framework) | v1.1 (2026-04-09) | 8 tactiques · 123 techniques · 94 compétences liées à la fraude | TTP de fraude financière cybernétique |
 
 **Exemple — une seule compétence mappée sur les six frameworks :**
 
-|Compétence|ATT&CK|NIST CSF|ATLAS|D3FEND|AI RMF|F3|
-|--|--|--|--|--|--|--|
-|`analyzing-network-traffic-of-malware`|T1071|DE.CM|AML.T0047|D3-NTA|MEASURE-2.6|—|
-|`detecting-business-email-compromise`|T1566|DE.AE|—|—|—|F1005.006 · monétisation|
+| Compétence                             | ATT&CK | NIST CSF | ATLAS     | D3FEND | AI RMF      | F3                       |
+| -------------------------------------- | ------ | -------- | --------- | ------ | ----------- | ------------------------ |
+| `analyzing-network-traffic-of-malware` | T1071  | DE.CM    | AML.T0047 | D3-NTA | MEASURE-2.6 | —                        |
+| `detecting-business-email-compromise`  | T1566  | DE.AE    | —         | —      | —           | F1005.006 · monétisation |
 
 ### 🆕 MITRE Fight Fraud Framework (F3) — 87 compétences liées à la fraude dans ce fork
 
@@ -97,23 +93,23 @@ Chaque compétence contient une liste `mitre_attack` en frontmatter, héritée t
 
 > ⚠️ La répartition par tactique ci-dessous reprend le **décompte du dépôt d'origine sur 817 compétences** et n'a pas encore été recalculée pour les 712 compétences de ce fork (cela nécessite le pipeline de correspondance technique→tactique de `mitreattack-python`, qui requiert un accès en direct aux données STIX de MITRE ATT&CK). Considérez ces chiffres comme indicatifs pour l'instant — les PR qui régénèrent ce tableau pour l'ensemble de compétences retenu sont bienvenues.
 
-|Tactic|ID|Skills (décompte du dépôt d'origine, non encore revérifié pour ce fork)|
-|--|--|--|
-|Reconnaissance|TA0043|103|
-|Resource Development|TA0042|22|
-|Initial Access|TA0001|467|
-|Execution|TA0002|350|
-|Persistence|TA0003|444|
-|Privilege Escalation|TA0004|464|
-|Stealth|TA0005|442|
-|Defense Impairment|TA0112|92|
-|Credential Access|TA0006|202|
-|Discovery|TA0007|237|
-|Lateral Movement|TA0008|68|
-|Collection|TA0009|172|
-|Command and Control|TA0011|123|
-|Exfiltration|TA0010|82|
-|Impact|TA0040|50|
+| Tactic               | ID     | Skills (décompte du dépôt d'origine, non encore revérifié pour ce fork) |
+| -------------------- | ------ | ----------------------------------------------------------------------- |
+| Reconnaissance       | TA0043 | 103                                                                     |
+| Resource Development | TA0042 | 22                                                                      |
+| Initial Access       | TA0001 | 467                                                                     |
+| Execution            | TA0002 | 350                                                                     |
+| Persistence          | TA0003 | 444                                                                     |
+| Privilege Escalation | TA0004 | 464                                                                     |
+| Stealth              | TA0005 | 442                                                                     |
+| Defense Impairment   | TA0112 | 92                                                                      |
+| Credential Access    | TA0006 | 202                                                                     |
+| Discovery            | TA0007 | 237                                                                     |
+| Lateral Movement     | TA0008 | 68                                                                      |
+| Collection           | TA0009 | 172                                                                     |
+| Command and Control  | TA0011 | 123                                                                     |
+| Exfiltration         | TA0010 | 82                                                                      |
+| Impact               | TA0040 | 50                                                                      |
 
 ## Démarrage rapide
 
@@ -132,42 +128,42 @@ Fonctionne immédiatement avec Claude Code, GitHub Copilot, OpenAI Codex CLI, Cu
 
 Recalculé directement à partir du dossier `skills/` réel de ce fork (et non repris de l'original) — **Red Teaming et Penetration Testing n'apparaissent plus comme domaines**, car toute compétence qui constituait ces deux domaines dans le dépôt d'origine était de niveau offensif et a été retirée. Quelques compétences relevant historiquement de ces deux domaines mais purement orientées détection/défense ont été reclassées dans le domaine défensif le plus proche lors du tri.
 
-|Domaine|Compétences|Capacités clés|
-|--|--|--|
-|Cloud Security|65|Durcissement AWS, Azure, GCP · CSPM · forensics cloud|
-|Threat Hunting|58|Chasse guidée par hypothèses · détection LOTL · chasse EVTX · chasse à l'échelle du parc|
-|Threat Intelligence|52|STIX/TAXII · MISP · OpenCTI · intégration de flux · profilage d'acteurs|
-|Digital Forensics|41|Imagerie disque · forensique mémoire · chronologies Hayabusa/KAPE/Plaso|
-|Malware Analysis|39|Analyse statique/dynamique · rétro-ingénierie · sandboxing|
-|SOC Operations|35|Playbooks · workflows d'escalade · détection Graph-log · exercices tabletop|
-|Identity & Access Management|37|Entra ID/ROADtools · PAM · identité zero trust|
-|Container Security|33|RBAC Kubernetes · scan d'images · Falco|
-|Network Security|33|IDS/IPS · règles de pare-feu · segmentation VLAN · analyse du trafic|
-|OT/ICS Security|29|Modbus · DNP3 · IEC 62443 · défense des historian · SCADA|
-|Security Operations|27|Corrélation SIEM · analyse de logs · triage d'alertes|
-|Incident Response|26|Confinement de compromission · réponse ransomware · playbooks IR|
-|Vulnerability Management|24|Nessus · workflows de scan · priorisation des patchs · CVSS|
-|Web Application Security|25|OWASP Top 10 · détection SQLi/XSS/SSRF · réglage WAF|
-|API Security|21|GraphQL · REST · OWASP API Top 10|
-|DevSecOps|18|Sécurité CI/CD · scan Trivy IaC/images · signature de code|
-|Zero Trust Architecture|18|BeyondCorp · modèle de maturité CISA · microsegmentation|
-|Endpoint Security|17|EDR · détection LOTL · malware fileless · chasse à la persistance|
-|Phishing Defense|16|Authentification email · détection BEC · IR phishing · défense ingénierie sociale|
-|Cryptography|15|TLS · Ed25519 · migration post-quantique · gestion des clés|
-|AI Security|14|Détection red-teaming LLM (garak/PyRIT) · détection d'injection de prompt · sécurité MCP/agentique · garde-fous|
-|Ransomware Defense|13|Détection précurseur · réponse · récupération · analyse du chiffrement|
-|Mobile Security|11|Analyse Android/iOS · forensics MDM|
-|Compliance & Governance|11|NIST 800-30/RMF · CMMC · HIPAA · TPRM · CIS benchmarks|
-|Supply Chain Security|8|SBOMs · confusion de dépendances · triage de paquets malveillants · SLSA/Sigstore|
-|Threat Detection|7|Détection de credential dumping · détection golden-ticket/pass-the-ticket · LOLBAS · signaux UEBA|
-|Hardware & Firmware Security|6|Audit CHIPSEC/UEFI · attestation TPM · chasse aux bootkits|
-|Deception Technology|6|Honeytokens · canarytokens · détection de compromission|
-|Blockchain Security|2|Détection de vulnérabilités smart-contract Ethereum · workflows d'audit Foundry|
-|Wireless Security|2|Détection d'attaques Bluetooth Low Energy · évaluation de sécurité BLE|
-|Privacy Compliance|2|Demandes d'accès RGPD · analyses d'impact vie privée|
-|Data Protection|1|Prévention de perte de données avec Microsoft Purview|
+| Domaine                      | Compétences | Capacités clés                                                                                                  |
+| ---------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------- |
+| Cloud Security               | 65          | Durcissement AWS, Azure, GCP · CSPM · forensics cloud                                                           |
+| Threat Hunting               | 58          | Chasse guidée par hypothèses · détection LOTL · chasse EVTX · chasse à l'échelle du parc                        |
+| Threat Intelligence          | 52          | STIX/TAXII · MISP · OpenCTI · intégration de flux · profilage d'acteurs                                         |
+| Digital Forensics            | 41          | Imagerie disque · forensique mémoire · chronologies Hayabusa/KAPE/Plaso                                         |
+| Malware Analysis             | 39          | Analyse statique/dynamique · rétro-ingénierie · sandboxing                                                      |
+| SOC Operations               | 35          | Playbooks · workflows d'escalade · détection Graph-log · exercices tabletop                                     |
+| Identity & Access Management | 37          | Entra ID/ROADtools · PAM · identité zero trust                                                                  |
+| Container Security           | 33          | RBAC Kubernetes · scan d'images · Falco                                                                         |
+| Network Security             | 33          | IDS/IPS · règles de pare-feu · segmentation VLAN · analyse du trafic                                            |
+| OT/ICS Security              | 29          | Modbus · DNP3 · IEC 62443 · défense des historian · SCADA                                                       |
+| Security Operations          | 27          | Corrélation SIEM · analyse de logs · triage d'alertes                                                           |
+| Incident Response            | 26          | Confinement de compromission · réponse ransomware · playbooks IR                                                |
+| Vulnerability Management     | 24          | Nessus · workflows de scan · priorisation des patchs · CVSS                                                     |
+| Web Application Security     | 25          | OWASP Top 10 · détection SQLi/XSS/SSRF · réglage WAF                                                            |
+| API Security                 | 21          | GraphQL · REST · OWASP API Top 10                                                                               |
+| DevSecOps                    | 18          | Sécurité CI/CD · scan Trivy IaC/images · signature de code                                                      |
+| Zero Trust Architecture      | 18          | BeyondCorp · modèle de maturité CISA · microsegmentation                                                        |
+| Endpoint Security            | 17          | EDR · détection LOTL · malware fileless · chasse à la persistance                                               |
+| Phishing Defense             | 16          | Authentification email · détection BEC · IR phishing · défense ingénierie sociale                               |
+| Cryptography                 | 15          | TLS · Ed25519 · migration post-quantique · gestion des clés                                                     |
+| AI Security                  | 14          | Détection red-teaming LLM (garak/PyRIT) · détection d'injection de prompt · sécurité MCP/agentique · garde-fous |
+| Ransomware Defense           | 13          | Détection précurseur · réponse · récupération · analyse du chiffrement                                          |
+| Mobile Security              | 11          | Analyse Android/iOS · forensics MDM                                                                             |
+| Compliance & Governance      | 11          | NIST 800-30/RMF · CMMC · HIPAA · TPRM · CIS benchmarks                                                          |
+| Supply Chain Security        | 8           | SBOMs · confusion de dépendances · triage de paquets malveillants · SLSA/Sigstore                               |
+| Threat Detection             | 7           | Détection de credential dumping · détection golden-ticket/pass-the-ticket · LOLBAS · signaux UEBA               |
+| Hardware & Firmware Security | 6           | Audit CHIPSEC/UEFI · attestation TPM · chasse aux bootkits                                                      |
+| Deception Technology         | 6           | Honeytokens · canarytokens · détection de compromission                                                         |
+| Blockchain Security          | 2           | Détection de vulnérabilités smart-contract Ethereum · workflows d'audit Foundry                                 |
+| Wireless Security            | 2           | Détection d'attaques Bluetooth Low Energy · évaluation de sécurité BLE                                          |
+| Privacy Compliance           | 2           | Demandes d'accès RGPD · analyses d'impact vie privée                                                            |
+| Data Protection              | 1           | Prévention de perte de données avec Microsoft Purview                                                           |
 
-*712 compétences réparties sur 32 domaines. Les totaux viennent du champ `subdomain` du frontmatter de chaque compétence, recalculés à partir du dossier `skills/` propre à ce fork.*
+_712 compétences réparties sur 32 domaines. Les totaux viennent du champ `subdomain` du frontmatter de chaque compétence, recalculés à partir du dossier `skills/` propre à ce fork._
 
 ## Comment les agents IA utilisent ces compétences
 
@@ -238,15 +234,19 @@ license: Apache-2.0
 
 ```md
 ## When to Use
+
 Conditions de déclenchement — quand un agent IA doit-il activer cette compétence ?
 
 ## Prerequisites
+
 Outils requis, niveaux d'accès et configuration d'environnement.
 
 ## Workflow
+
 Guide d'exécution pas à pas avec commandes spécifiques et points de décision.
 
 ## Verification
+
 Comment confirmer que la compétence a été exécutée avec succès.
 ```
 
@@ -254,36 +254,36 @@ Les champs du frontmatter : `name` (kebab-case, 1–64 caractères), `descriptio
 
 **📊 Couverture MITRE ATT&CK Enterprise — les 15 tactiques**
 
-|Tactic|ID|Coverage|Key skills|
-|--|--|--|--|
-|Reconnaissance|TA0043|Strong|OSINT, énumération de sous-domaines, reconnaissance DNS|
-|Resource Development|TA0042|Moderate|Infrastructure de phishing, détection de mise en place C2|
-|Initial Access|TA0001|Strong|Simulation de phishing, détection d'exploit, forced browsing|
-|Execution|TA0002|Strong|Analyse PowerShell, malware fileless, script block logging|
-|Persistence|TA0003|Strong|Tâches planifiées, registre, comptes de service, LOTL|
-|Privilege Escalation|TA0004|Strong|Kerberoasting, attaques AD, élévation de privilèges cloud|
-|Stealth|TA0005|Strong|Obfuscation, analyse rootkit, détection d'évasion|
-|Defense Impairment|TA0112|Strong|Désactivation EDR, destruction de logs, contournement de défenses|
-|Credential Access|TA0006|Strong|Détection Mimikatz, pass-the-hash, credential dumping|
-|Discovery|TA0007|Moderate|BloodHound, énumération AD, scan réseau|
-|Lateral Movement|TA0008|Strong|Exploits SMB, détection des déplacements latéraux avec Splunk|
-|Collection|TA0009|Moderate|Forensics email, détection de data staging|
-|Command and Control|TA0011|Strong|Beaconing C2, DNS tunneling, analyse Cobalt Strike|
-|Exfiltration|TA0010|Strong|Exfiltration DNS, contrôles DLP, détection de perte de données|
-|Impact|TA0040|Strong|Défense ransomware, analyse du chiffrement, récupération|
+| Tactic               | ID     | Coverage | Key skills                                                        |
+| -------------------- | ------ | -------- | ----------------------------------------------------------------- |
+| Reconnaissance       | TA0043 | Strong   | OSINT, énumération de sous-domaines, reconnaissance DNS           |
+| Resource Development | TA0042 | Moderate | Infrastructure de phishing, détection de mise en place C2         |
+| Initial Access       | TA0001 | Strong   | Simulation de phishing, détection d'exploit, forced browsing      |
+| Execution            | TA0002 | Strong   | Analyse PowerShell, malware fileless, script block logging        |
+| Persistence          | TA0003 | Strong   | Tâches planifiées, registre, comptes de service, LOTL             |
+| Privilege Escalation | TA0004 | Strong   | Kerberoasting, attaques AD, élévation de privilèges cloud         |
+| Stealth              | TA0005 | Strong   | Obfuscation, analyse rootkit, détection d'évasion                 |
+| Defense Impairment   | TA0112 | Strong   | Désactivation EDR, destruction de logs, contournement de défenses |
+| Credential Access    | TA0006 | Strong   | Détection Mimikatz, pass-the-hash, credential dumping             |
+| Discovery            | TA0007 | Moderate | BloodHound, énumération AD, scan réseau                           |
+| Lateral Movement     | TA0008 | Strong   | Exploits SMB, détection des déplacements latéraux avec Splunk     |
+| Collection           | TA0009 | Moderate | Forensics email, détection de data staging                        |
+| Command and Control  | TA0011 | Strong   | Beaconing C2, DNS tunneling, analyse Cobalt Strike                |
+| Exfiltration         | TA0010 | Strong   | Exfiltration DNS, contrôles DLP, détection de perte de données    |
+| Impact               | TA0040 | Strong   | Défense ransomware, analyse du chiffrement, récupération          |
 
 Un fichier de couche **ATT&CK Navigator** est inclus dans les assets de release v1.0.0 pour la visualisation de la couverture.
 
 **📊 Alignement NIST CSF 2.0 — les 6 fonctions**
 
-|Function|Skills|Examples|
-|--|--|--|
-|**Govern (GV)**|30+|Stratégie de risque, cadres de politique, rôles et responsabilités|
-|**Identify (ID)**|120+|Découverte des actifs, évaluation du paysage de menaces, analyse du risque|
-|**Protect (PR)**|150+|Durcissement IAM, règles WAF, zero trust, chiffrement|
-|**Detect (DE)**|200+|Threat hunting, corrélation SIEM, détection d'anomalies|
-|**Respond (RS)**|160+|Réponse à incident, forensics, confinement d'une compromission|
-|**Recover (RC)**|40+|Récupération ransomware, BCP, reprise après sinistre|
+| Function          | Skills | Examples                                                                   |
+| ----------------- | ------ | -------------------------------------------------------------------------- |
+| **Govern (GV)**   | 30+    | Stratégie de risque, cadres de politique, rôles et responsabilités         |
+| **Identify (ID)** | 120+   | Découverte des actifs, évaluation du paysage de menaces, analyse du risque |
+| **Protect (PR)**  | 150+   | Durcissement IAM, règles WAF, zero trust, chiffrement                      |
+| **Detect (DE)**   | 200+   | Threat hunting, corrélation SIEM, détection d'anomalies                    |
+| **Respond (RS)**  | 160+   | Réponse à incident, forensics, confinement d'une compromission             |
+| **Recover (RC)**  | 40+    | Récupération ransomware, BCP, reprise après sinistre                       |
 
 NIST CSF 2.0 (février 2024) a ajouté la fonction **Govern** et étendu le périmètre des infrastructures critiques à toutes les organisations. Les mappages des compétences s'alignent sur les 22 catégories et font référence à 106 sous-catégories.
 
@@ -328,6 +328,7 @@ Les compétences ont continué de croître sur le `main` du dépôt d'origine de
 Le périmètre propre de ce fork est étroit et distinct de celui du dépôt d'origine : garder le tri défensif exact, et garder le manifeste d'outils à jour.
 
 **Aider sur ce fork spécifiquement :**
+
 - Une compétence dans `skills/` est en fait offensive/à double usage et est passée entre les mailles du filtre ? Ouvrez une issue ou une PR pour la retirer, en citant son nom.
 - Une compétence défensive listée dans [REMOVED_SKILLS.txt](REMOVED_SKILLS.txt) a été retirée à tort (faux positif) ? Ouvrez une issue — voir les cas limites déjà signalés dans [CURATION_NOTES.md](CURATION_NOTES.md).
 - Un outil manque dans l'entrée d'une compétence de [tool_manifest.json](tool_manifest.json) ou [TOOLS_SETUP_GUIDE.md](TOOLS_SETUP_GUIDE.md) ? Les PR sont bienvenues.
@@ -388,6 +389,6 @@ Ce projet est sous licence Apache License 2.0, héritée du dépôt d'origine. V
 
 [⭐ Star ce fork](https://github.com/fatehMohamed14/anthropic-cybersecurity-skills-defensive/stargazers) · [🍴 Fork ce fork](https://github.com/fatehMohamed14/anthropic-cybersecurity-skills-defensive/fork) · [📄 Pourquoi ce fork](#pourquoi-ce-fork) · [⭐ Star le dépôt d'origine aussi](https://github.com/mukul975/anthropic-cybersecurity-skills/stargazers)
 
-*Contenu des compétences par la communauté du dépôt d'origine, trié par [@fatehMohamed14](https://github.com/fatehMohamed14). Non affilié à Anthropic PBC.*
+_Contenu des compétences par la communauté du dépôt d'origine, trié par [@fatehMohamed14](https://github.com/fatehMohamed14). Non affilié à Anthropic PBC._
 
 </div>
