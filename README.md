@@ -339,7 +339,7 @@ All platforms that support the [agentskills.io](https://agentskills.io) standard
 |---|---|---|
 | [v1.0.0](https://github.com/mukul975/Anthropic-Cybersecurity-Skills/releases/tag/v1.0.0) | March 11, 2026 | 734 skills · 26 domains · MITRE ATT&CK + NIST CSF 2.0 mapping · ATT&CK Navigator layer |
 
-Skills have continued to grow on upstream `main` since v1.0.0 — the upstream library now contains **818 skills** with **6-framework mapping**  (MITRE ATLAS, D3FEND, NIST AI RMF, and the MITRE Fight Fraud Framework added post-release).  Check [upstream Releases](https://github.com/mukul975/anthropic-cybersecurity-skills/releases) for the latest tagged upstream version.
+Skills have continued to grow on upstream `main` since v1.0.0 — the upstream library now contains **712 skills** with **6-framework mapping**  (MITRE ATLAS, D3FEND, NIST AI RMF, and the MITRE Fight Fraud Framework added post-release).  Check [upstream Releases](https://github.com/mukul975/anthropic-cybersecurity-skills/releases) for the latest tagged upstream version.
 
 **This fork** is a curated snapshot of that library: 106 offensive/exploit/C2 skills removed (712 remain), plus a per-skill tool manifest and setup guide added. See [CURATION_NOTES.md](CURATION_NOTES.md) for exactly what changed and why.
 
@@ -376,7 +376,7 @@ If you use the **underlying skill content** in research or publications, cite th
   year         = {2026},
   url          = {https://github.com/mukul975/anthropic-cybersecurity-skills},
   license      = {Apache-2.0},
-  note         = {818 structured cybersecurity skills for AI agents,
+  note         = {712 structured cybersecurity skills for AI agents,
                   mapped to MITRE ATT\&CK, NIST CSF 2.0, MITRE ATLAS,
                   MITRE D3FEND, and NIST AI RMF}
 }
